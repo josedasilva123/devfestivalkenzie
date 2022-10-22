@@ -1,68 +1,83 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./reset.css">
-    <link rel="stylesheet" href="./style.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./reset.css" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
     <title>Carrinho</title>
-</head>
-<body>
+  </head>
+  <body>
     <header id="header">
-        <div class="container">
-          <div class="flex-box">
-            <a href="/index.html" class="logo">
-              <img
-                src="./assets/LogoKenzieFestival.png"
-                alt="Logo Kenzie Festival"
-              />
+      <div class="container">
+        <div class="flex-box">
+          <a href="/index.html" class="logo">
+            <img
+              src="./assets/LogoKenzieFestival.png"
+              alt="Logo Kenzie Festival"
+            />
+          </a>
+          <nav class="menu">
+            <ul>
+              <li>
+                <a href="./index.html#sobre"> Sobre </a>
+              </li>
+            </ul>
+            <a href="./carrinho.html" class="btn outline">
+              Quero o meu ingresso!
             </a>
-            <nav class="menu">
-              <ul>
-                <li>
-                  <a href="./index.html#sobre"> Sobre </a>
-                </li>
-              </ul>
-              <a href="./carrinho.html" class="btn outline">
-                Quero o meu ingresso!
-              </a>
-              <button>
-                <img src="./assets/Vector.png" alt="Modo diurno" />
-              </button>
-            </nav>
-          </div>
+            <button>
+              <img src="./assets/Vector.png" alt="Modo diurno" />
+            </button>
+          </nav>
         </div>
-      </header>
+      </div>
+    </header>
 
     <section id="carrinho">
-        <h1 class="title two">Finalizar a compra</h1>
+      <div class="container">
+        <div class="flex-box">
+          <div class="left">
+            <h1 class="title two">Finalizar a compra</h1>
 
-        <ul>
-            <li>
-                <h3 class="title four">Ingresso para o Kenzie Music Festival</h3>
-                <div>
-                    <div>
-                        <button>-</button>
-                        <span>1</span>
-                        <button>+</button>
-                    </div>
-                    <p class="title three">R$ 90,00 por pessoa</p>
+            <ul class="ticket-list">
+              <li class="ticket">
+                <h3 class="title four">
+                  Ingresso para o Kenzie Music Festival
+                </h3>
+                <div class="price">
+                  <div class="controls">
+                    <button>-</button>
+                    <span>1</span>
+                    <button>+</button>
+                  </div>
+                  <p class="title three">R$ 90,00 por pessoa</p>
                 </div>
-            </li>
-        </ul>
-
-        <div>
-            <h2 class="title four">Preencha os campos</h2>
-            <form>
-                <input type="text" name="nome" id="nome" placeholder="Seu nome">
-                <input type="email" name="email" id="email" placeholder="Seu e-mail">
-                <button type="submit" class="btn solid">Finalizar comprar</button>
+              </li>
+            </ul>
+          </div>
+          <div class="right">
+            <h2 class="title three pad20-bottom">Preencha os campos</h2>
+            
+            <form class="form">
+              <input type="text" name="nome" id="nome" placeholder="Seu nome" />
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="Seu e-mail"
+              />
+              <button type="submit" class="btn solid">Finalizar comprar</button>
             </form>
+          </div>          
         </div>
+      </div>
     </section>
-</body>
+  </body>
 </html>
-

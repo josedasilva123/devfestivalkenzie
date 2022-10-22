@@ -90,6 +90,9 @@ body{
 .blue-text{
     color: #0000FF;
 }
+.lightblue-text{
+    color: #A5A5FF;
+}
 
 /* Botões */
 .btn{
@@ -126,6 +129,7 @@ body{
 
 /* Grid */
 .container{
+    padding: 10px;
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
@@ -170,4 +174,101 @@ body{
 
 #artistas .artists-list img{
     border-radius: 255px;
+}
+#finalizacao{
+    padding: 50px 0;
+}
+#finalizacao .flex-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 50px;
+}
+#finalizacao .flex-box .ticket{
+    position: relative;
+    min-width: 700px;
+    min-height: 370px;
+    border: 1px solid #0000FF;
+    border-left-width: 100px;
+    padding: 40px;
+}
+#finalizacao .flex-box .ticket img{
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+}
+#finalizacao .flex-box .ticket .quantity-box{
+    margin-top: 20px;
+    padding: 20px;
+    border: 1px solid #FFFFFF;
+}
+#carrinho{
+    padding: 50px 0;
+}
+#carrinho .flex-box{
+    display: flex;
+    gap: 40px;
+}
+#carrinho .flex-box .left,
+#carrinho .flex-box .right{
+    width: 100%;
+}
+#carrinho .flex-box .right{
+    max-width: 300px;
+}
+#carrinho .flex-box .ticket-list{
+    margin-top: 30px;
+}
+#carrinho .flex-box .ticket-list .ticket{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px;
+    border: 1px solid #A5A5FF;
+    border-radius: 25px;
+}
+
+#carrinho .flex-box .ticket-list .ticket .controls{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 10px;
+}
+#carrinho .flex-box .ticket-list .ticket .controls button{
+    font-family: Poppins;
+    font-size: 17px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 29px;
+    height: 29px;
+    color: #FFFFFF;
+    border: 2px solid #FFFFFF;
+    border-radius: 255px;
+    
+}
+#carrinho .flex-box .ticket-list .ticket .controls span{
+    font-family: Poppins;
+    font-size: 19px;
+    font-weight: 700;
+    color:#A5A5FF;
+}
+#carrinho .flex-box .form{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+#carrinho .flex-box .form input{
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 400px;
+    background: transparent;
+    padding: 0 20px;
+    height: 54px;
+    border: 1px solid #A5A5FF;
+    border-radius: 255px;
+}
+#carrinho .flex-box .form button{
+    margin-top: 30px;
 }
