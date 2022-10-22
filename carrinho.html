@@ -11,6 +11,7 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
+
     <title>Carrinho</title>
   </head>
   <body>
@@ -53,11 +54,11 @@
                 </h3>
                 <div class="price">
                   <div class="controls">
-                    <button>-</button>
-                    <span>1</span>
-                    <button>+</button>
+                    <button id="remove-ticket">-</button>
+                    <span id="ticket">1</span>
+                    <button id="add-ticket">+</button>
                   </div>
-                  <p class="title three">R$ 90,00 por pessoa</p>
+                  <p class="title three">R$ <span id="ticket-price">90</span>,00 valor total</p>
                 </div>
               </li>
             </ul>
@@ -65,7 +66,7 @@
           <div class="right">
             <h2 class="title three pad20-bottom">Preencha os campos</h2>
             
-            <form class="form">
+            <form class="form" id="cart-form">
               <input type="text" name="nome" id="nome" placeholder="Seu nome" />
               <input
                 type="email"
@@ -73,11 +74,12 @@
                 id="email"
                 placeholder="Seu e-mail"
               />
-              <button type="submit" class="btn solid">Finalizar comprar</button>
+              <button type="submit" id="buy-button" class="btn solid">Finalizar comprar</button>
             </form>
           </div>          
         </div>
       </div>
     </section>
   </body>
+  <script src="./script.js"></script>
 </html>
