@@ -3,8 +3,32 @@ body{
     background-color: #01011C;
 }
 
+/* Global Spacing */
+.pad10-top{
+    padding-top: 10px;
+}
+.pad20-top{
+    padding-top: 20px;
+}
+.pad30-top{
+    padding-top: 30px;
+}
+.pad10-bottom{
+    padding-bottom: 10px;
+}
+.pad20-bottom{
+    padding-bottom: 20px;
+}
+.pad30-bottom{
+    padding-bottom: 30px;
+}
+
 /* Header */
-header .menu ul a{
+#header{
+    background: #01011C;
+}
+
+#header .menu ul a{
     font-family: Poppins;
     font-weight: 400;
     font-size: 19px;
@@ -12,9 +36,26 @@ header .menu ul a{
     text-transform: uppercase;
 }
 
+#header .flex-box{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#header .flex-box nav{ 
+    display: flex;
+    align-items: center;
+    gap: 36px;
+}
+
+#header .flex-box .logo img{
+    max-width: 170px;
+}
+
 /* Tipografia */
 .title{
     font-family: Poppins;
+    line-height: 1.2;
     color: #FFFFFF;
 }
 .title.one{    
@@ -36,6 +77,9 @@ header .menu ul a{
 .title.four{
     font-size: 16px;
     font-weight: 600;
+}
+.title.center{
+    text-align: center;
 }
 .content-box p{
     font-family: Poppins;
@@ -61,26 +105,20 @@ header .menu ul a{
     border-radius: 255px;
     transition: 0.4s;
 }
-
-
 .btn.solid{
     background: #0000FF;
     color: #FFFFFF;
     border: 2px solid #0000FF;
 }
-
 .btn.solid:hover{
     background: #4444ff;
     border-color: #4444ff;
 }
-
-
 .btn.outline{
     background: transparent;
     color: #A5A5FF;
     border: 2px solid #A5A5FF;
 }
-
 .btn.outline:hover{
     background: #A5A5FF;
     color: #FFFFFF;
@@ -88,5 +126,48 @@ header .menu ul a{
 
 /* Grid */
 .container{
-    
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Seções */
+#principal{
+    padding: 50px 0;
+}
+#principal .flex-box{
+    display: flex;
+    align-items: center;
+    gap: 75px;
+}
+
+#sobre{
+    padding: 50px 0;
+}
+#sobre .flex-box{
+    display: flex;
+    align-items: center;
+    gap: 75px;
+}
+
+#sobre .flex-box .left,
+#sobre .flex-box .right{
+    width: 100%;
+}
+
+#sobre .flex-box .left img{
+    width: 100%;
+}
+
+#artistas{
+    padding: 50px 0;
+}
+
+#artistas .artists-list{
+    display: flex;
+    gap: 15px;
+}
+
+#artistas .artists-list img{
+    border-radius: 255px;
 }
