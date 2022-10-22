@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./reset.css">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <title>Carrinho</title>
 </head>
 <body>
@@ -14,12 +18,12 @@
         <nav>
             <ul>
                 <li>
-                    <a href="/index.html#sobre">
+                    <a href="./index.html#sobre">
                         Sobre
                     </a>
                 </li>
             </ul>
-            <a href="/carrinho.html">
+            <a href="./carrinho.html" class="btn outline">
                 Quero o meu ingresso!
             </a>
             <button>
@@ -29,31 +33,31 @@
     </header>
 
     <section id="carrinho">
-        <h1>Finalizar a compra</h1>
+        <h1 class="title two">Finalizar a compra</h1>
 
         <ul>
             <li>
-                <h3>Ingresso para o Kenzie Music Festival</h3>
+                <h3 class="title four">Ingresso para o Kenzie Music Festival</h3>
                 <div>
                     <div>
                         <button>-</button>
                         <span>1</span>
                         <button>+</button>
                     </div>
-                    <p>R$ 90,00 por pessoa</p>
+                    <p class="title three">R$ 90,00 por pessoa</p>
                 </div>
             </li>
         </ul>
 
         <div>
-            <h2>Preencha os campos</h2>
+            <h2 class="title four">Preencha os campos</h2>
             <form>
                 <input type="text" name="nome" id="nome" placeholder="Seu nome">
                 <input type="email" name="email" id="email" placeholder="Seu e-mail">
-                <button type="submit">Finalizar comprar</button>
+                <button type="submit" class="btn solid">Finalizar comprar</button>
             </form>
         </div>
-
     </section>
 </body>
 </html>
+
